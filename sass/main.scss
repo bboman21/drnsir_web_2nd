@@ -1,0 +1,36 @@
+// import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+$custom-theme-colors: (
+  "nlight": #def7f3,
+  "ngreen": #1dbfb3,
+  "nfuschia": #fb8bc4,
+  "nyellow": #ffbb0c,
+  "nblue": #40b2ff,
+  "ntext": #336177,
+  "ntext_guide": #a1cbdf,
+  "ndark": #1f4659,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+p {
+  color: #336177;
+}
+
+.smile-bg {
+  background-image: url(../assets/images/smile_bg.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.nsir-info {
+  font-size: 0.75rem;
+}
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
