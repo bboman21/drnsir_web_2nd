@@ -19,6 +19,10 @@ p {
   color: #336177;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .smile-bg {
   background-image: url(../assets/images/smile_bg.png);
   background-size: cover;
@@ -30,6 +34,30 @@ p {
 
 .nsir-info {
   font-size: 0.75rem;
+}
+
+.n_btn {
+  width: 180px;
+  height: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+  color: white;
+}
+
+#btn_chat {
+  background-image: url(../assets/images/btn_chat.png);
+}
+
+#btn_diagnosis {
+  background-image: url(../assets/images/btn_diagnosis.png);
+}
+
+#btn_write {
+  background-image: url(../assets/images/btn_write.png);
 }
 
 // import bootstrap
