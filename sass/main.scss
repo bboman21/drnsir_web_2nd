@@ -25,10 +25,11 @@ a {
 
 .smile-bg {
   background-image: url(../assets/images/smile_bg.png);
+  background-position: top;
+  width: 720px;
+  height: 80px;
+  // resize: both;
   background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
 }
 
@@ -46,6 +47,18 @@ a {
   cursor: pointer;
   vertical-align: middle;
   color: white;
+}
+
+.divide {
+  height: 16px;
+}
+
+.subtitle_h {
+  height: 3rem;
+}
+
+#text_account {
+  color: #1f4659;
 }
 
 #btn_chat {
