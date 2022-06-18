@@ -2,21 +2,30 @@
 @import "../node_modules/bootstrap/scss/_functions.scss";
 @import "../node_modules/bootstrap/scss/_variables.scss";
 
+// 나눔스퀘어 폰트
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
 $custom-theme-colors: (
   "nlight": #def7f3,
   "ngreen": #1dbfb3,
+  "nlightgreen": #afece9,
   "nfuschia": #fb8bc4,
   "nyellow": #ffbb0c,
   "nblue": #40b2ff,
   "ntext": #336177,
-  "ntext_guide": #a1cbdf,
+  "ntext_guide": #5a96b3,
   "ndark": #1f4659,
+  "result_good": #1dbfb3,
+  "result_normal": #40b2ff,
+  "result_worry": #be55f2,
+  "result_serious": #f24974,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-.n_text {
+* {
   color: #336177;
+  font-family: "NanumSquare", Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -24,7 +33,23 @@ p {
 }
 
 a {
+  color: #336177 !important;
   text-decoration: none !important;
+  // &:hover {
+  //   text-decoration: none !important;
+  // }
+  // &:active {
+  //   text-decoration: none !important;
+  // }
+}
+
+.ntext {
+  color: #336177;
+}
+
+.ntext_guide {
+  font-size: 0.85rem;
+  color: #5a96b3;
 }
 
 .smile-bg {
@@ -32,7 +57,24 @@ a {
   background-position: top;
   width: 720px;
   height: 80px;
-  // resize: both;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mind-bg {
+  background-image: url(../assets/images/mind_bg01.png);
+  background-position: top;
+  width: 720px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mind-bg_title {
+  background-image: url(../assets/images/mind_bg_title.png);
+  background-position: top;
+  width: 720px;
+  height: 60px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -41,7 +83,20 @@ a {
   font-size: 0.75rem;
 }
 
-.n_btn {
+.point_img {
+  width: 240px;
+  height: 240px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  border: none;
+
+  vertical-align: middle;
+  color: white;
+  font-size: 3rem;
+}
+
+.btn_img {
   width: 180px;
   height: 40px;
   background-color: transparent;
@@ -53,16 +108,41 @@ a {
   color: white;
 }
 
-.divide {
+.btn_diagnosis {
+  margin: 0.75rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 30px;
+  border: solid;
+}
+
+.btn_text {
+  margin: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.divider_16 {
   height: 16px;
+}
+
+.divider_32 {
+  height: 32px;
+}
+
+.divider_64 {
+  height: 64px;
 }
 
 .subtitle_h {
   height: 3rem;
-}
-
-#text_account {
-  color: #1f4659;
 }
 
 #btn_chat {
