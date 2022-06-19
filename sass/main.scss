@@ -133,6 +133,17 @@ a {
   border: none;
 }
 
+.btn_more {
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  background-color: white;
+  border-radius: 30px;
+  border: solid;
+}
+
 .divider_16 {
   height: 16px;
 }
@@ -149,6 +160,13 @@ a {
   height: 3rem;
 }
 
+.empty_box {
+  height: 200px;
+  width: auto;
+
+  background-color: lightgray;
+}
+
 #btn_chat {
   background-image: url(../assets/images/btn_chat.png);
 }
@@ -161,5 +179,8 @@ a {
   background-image: url(../assets/images/btn_write.png);
 }
 
+#symptom_list {
+  height: 330px;
+}
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
