@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Dr. Nsir</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid text-center">
+        <div class="row d-flex align-items-center bg-nlight pt-4">
+          <div class="col-2">
+            <a href="signup.html">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z"
+                  fill="#336177"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="col-8">
+            <span class="h1 align-middle">계정 정보 입력</span>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-12 mind-bg_title"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-1 col-md-3"></div>
+          <div class="col-10 col-md-6">
+            <div class="mt-5">
+              <div class="">
+                <input
+                  type="email"
+                  class="form-control border-1"
+                  id="floatingInput"
+                  placeholder="이메일 입력"
+                />
+              </div>
+              <span class="ntext_guide_erro mt-1">
+                이메일이 올바르게 쓰여지지 않았습니다.
+              </span>
+            </div>
+            <div class="text-center mt-4">
+              <input
+                type="button"
+                id="btn_sendemail"
+                class="btn_signup"
+                value="인증 이메일 보내기"
+                onclick="location.href='#'"
+              />
+            </div>
+
+            <div class="d-flex mt-5">
+              <div class="flex-fill">
+                <input
+                  type="number"
+                  class="form-control border-1"
+                  id="floatingInput"
+                  placeholder="인증번호"
+                />
+              </div>
+              <div class="">
+                <a
+                  class="btn btn-ntext text-white ms-2 px-4"
+                  href="#"
+                  role="button"
+                  >확인</a
+                >
+              </div>
+            </div>
+            <span class="ntext_guide mt-1"
+              >이메일로 받은 인증번호를 입력하세요</span
+            >
+            <div class="divider_64"></div>
+            <div>
+              <div class="">
+                <input
+                  type="password"
+                  class="form-control border-1"
+                  id="floatingInput"
+                  placeholder="비밀번호"
+                />
+              </div>
+              <span class="ntext_guide mt-1"
+                >영문, 숫자, 특부문자가 조합된 8자 이상의 비밀번호를
+                입력하세요.</span
+              >
+            </div>
+            <div class="divider_16"></div>
+            <div>
+              <div class="">
+                <input
+                  type="password"
+                  class="form-control border-1"
+                  id="floatingInput"
+                  placeholder="비밀번호 확인"
+                />
+              </div>
+              <span class="ntext_guide_erro mt-1"
+                >비밀번호가 서로 맞지 않습니다.</span
+              >
+            </div>
+          </div>
+          <div class="col-1 col-md-3"></div>
+        </div>
+      </div>
+      <div class="divider_32"></div>
+      <div class="text-center my-1 mt-5">
+        <a href="#"
+          ><button typy="button" class="btn border-0 text-ntext" disabled>
+            다음
+          </button>
+        </a>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

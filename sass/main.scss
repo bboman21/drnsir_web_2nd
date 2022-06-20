@@ -51,6 +51,10 @@ a {
   font-size: 0.85rem;
   color: #5a96b3;
 }
+.ntext_guide_erro {
+  font-size: 0.85rem;
+  color: #f24974;
+}
 
 .smile-bg {
   background-image: url(../assets/images/smile_bg.png);
@@ -95,9 +99,20 @@ a {
   color: white;
   font-size: 3rem;
 }
-
 .btn_img {
   width: 180px;
+  height: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+  color: white;
+}
+
+.btn_signup {
+  width: 234px;
   height: 40px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -144,6 +159,12 @@ a {
   border: solid;
 }
 
+.btn_icon {
+  background-color: transparent;
+  border: none; /* Remove borders */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
 .divider_16 {
   height: 16px;
 }
@@ -177,6 +198,13 @@ a {
 
 #btn_write {
   background-image: url(../assets/images/btn_write.png);
+}
+
+#btn_email {
+  background-image: url(../assets/images/btn_email.svg);
+}
+#btn_sendemail {
+  background-image: url(../assets/images/btn_sendemail.svg);
 }
 
 #symptom_list {
