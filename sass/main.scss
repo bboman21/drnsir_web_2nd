@@ -24,7 +24,7 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-* {
+body {
   color: #336177;
   font-family: NanumSquare, Arial, Roboto, Helvetica, sans-serif;
 }
