@@ -3,7 +3,7 @@
 @import "../node_modules/bootstrap/scss/_variables.scss";
 
 // 나눔스퀘어 폰트
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 $custom-theme-colors: (
@@ -27,7 +27,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 // variable overrides
 $input-placeholder-color: #ccc;
 
-body {
+* {
   color: #336177;
   font-family: NanumSquare, Arial, Roboto, Helvetica, sans-serif;
 }
