@@ -11,7 +11,7 @@ $custom-theme-colors: (
   "ngreen": #1dbfb3,
   "nlightgreen": #afece9,
   "nfuschia": #fb8bc4,
-  "nfuschia2": #EC55A2,
+  "nfuschia2": #ec55a2,
   "nyellow": #ffbb0c,
   "nblue": #40b2ff,
   "ntext": #336177,
@@ -197,6 +197,9 @@ input[type="password"] {
 
 .divider_64 {
   height: 64px;
+}
+.divider_128 {
+  height: 128px;
 }
 
 .subtitle_h {
