@@ -6,6 +6,22 @@
 @import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $custom-theme-colors: (
   "nlight": #def7f3,
   "ngreen": #1dbfb3,
@@ -21,6 +37,9 @@ $custom-theme-colors: (
   "result_normal": #40b2ff,
   "result_worry": #be55f2,
   "result_serious": #f24974,
+  "title01": #5abcb2,
+  "title02": #5da9bc,
+  "title03": #f09e62,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
@@ -30,7 +49,7 @@ $input-placeholder-color: #ccc;
 
 * {
   color: #336177;
-  font-family: NanumSquare, Arial, Roboto, Helvetica, sans-serif;
+  font-family: Cafe24SsurroundAir, Arial, Roboto, Helvetica, sans-serif;
 }
 html {
   /* Prevent font scaling in landscape */
@@ -58,9 +77,16 @@ input[type="password"] {
   font-family: "Arial";
 }
 
-.ntext {
-  color: #336177;
+.font-cafe24_ssurround {
+  font-family: "Cafe24Ssurround";
 }
+
+.font-nanumsquare {
+  font-family: "nanumsquare";
+}
+// .ntext {
+//   color: #336177;
+// }
 
 .ntext_guide {
   font-size: 0.85rem;
@@ -255,6 +281,11 @@ input[type="checkbox"]:checked {
 label {
   cursor: pointer;
 }
+
+#btn_common {
+  background-image: url(../assets/images/btn_common.png);
+}
+
 #btn_chat {
   background-image: url(../assets/images/btn_chat.png);
 }
